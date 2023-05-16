@@ -1,0 +1,459 @@
+.container
+{
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1600px){
+    .container
+    {
+        max-width: 800px;
+    }
+}
+
+*,
+*::after
+*::before {
+   box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+.header
+{
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.headerMenu
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background: #051C20;
+}
+
+
+/* LOGO */
+
+.logo
+{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo a 
+{
+    color: gray;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.navigation
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.CommonObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.PSObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.XBOXObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.SWITCHObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.PSObj:hover
+{
+    color:blue;
+}
+
+.XBOXObj:hover
+{
+    color:chartreuse;
+}
+
+.CommonObj:hover
+{
+    color:aliceblue;
+}
+
+.SWITCHObj:hover
+{
+    color:crimson;
+}
+
+/*MainBlock*/
+
+.MainBlock
+{
+    padding-top:5%;
+    max-width: 937px;
+    margin: 0 auto;
+}
+
+.TextUnderPhoto
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 68px;
+    color: whitesmoke;
+    padding-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.TextUnderPhoto::after
+{
+    content: "";
+    display: block;
+    width: 75vh;
+    height: 3px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+/*Link*/
+
+.LinkBlock
+{
+    margin-top: 5%;
+    max-height: 500px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "MIREA photo photo mail"
+    "group photo photo vk"
+    "name photo photo telegram";
+
+    gap: 3em;
+}
+
+.MIREA
+{
+    margin: auto;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    grid-area: MIREA;
+}
+
+.MIREA h3
+{
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.MIREA p
+{
+    font-size: 25px;
+    justify-content: center;
+}
+
+.group
+{
+    margin: auto;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    grid-area: group;
+}
+
+.group h3
+{
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.group p
+{
+    font-size: 25px;
+    justify-content: center;
+}
+
+.name
+{
+    margin: auto;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    grid-area: name;
+}
+
+.name h3
+{
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.name p
+{
+    font-size: 25px;
+    justify-content: center;
+}
+
+.photo
+{
+    border-radius: 45px;
+    background: url(../img/MyPhoto.jpg)no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    grid-area: photo;
+}
+
+.LinkBlock a
+{
+    margin: 0 auto;
+    font-size: 115px;
+    color: whitesmoke;
+
+    transition: 0.5s;
+}
+
+.mail
+{
+    grid-area: mail;
+}
+
+.vk
+{
+    grid-area: vk;
+}
+
+.telegram
+{
+    grid-area: telegram;
+}
+
+.mail:hover
+{
+    color:  yellow;
+}
+
+.telegram:hover
+{
+    color:  #357fee;
+}
+
+.vk:hover
+{
+    color:  #1c3ab0;
+}
+
+/* FOOTER */
+
+.footer
+{
+    margin-top: 15%;
+    background: black;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p
+{
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* Адаптив */
+/* 320 - 500 */
+@media screen and (min-width: 320px) and (max-width: 500px){
+    .container
+    {
+        max-width: 300px;
+    }
+
+    .header
+    {
+        height: 3em;
+    }
+
+    .headerMenu
+    {
+        margin-top: 12px;
+    }
+
+    .logo
+    {
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navigation
+    {
+        font-size: 8px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .MainBlock
+    {
+        padding-top:5%;
+        max-width: 300px;
+    }
+
+    .TextUnderPhoto
+    {
+        font-size: 30px;
+        padding-top: 10%;
+    }
+    
+    .TextUnderPhoto::after
+    {
+        width: 60%;
+        height: 2px;
+    }
+    
+
+    .LinkBlock
+    {
+        margin-top: 25%;
+        max-height: 500px;
+
+        gap: 2em;
+    }
+    
+    .MIREA h3
+    {
+        font-size: 20px;
+    }
+    
+    .MIREA p
+    {
+        font-size: 12px;
+    }
+    
+    .group h3
+    {
+        font-size: 20px;
+    }
+    
+    .group p
+    {
+        font-size: 12px;
+    }
+    
+    .name h3
+    {
+        font-size: 20px;
+    }
+    
+    .name p
+    {
+        font-size: 12px;
+    }
+    
+    .LinkBlock a
+    {
+        font-size: 55px;
+    }
+    
+
+    .footer
+    {
+        height: 60px;
+    }
+
+    .footer p
+    {
+        font-size: 8px;
+    }
+}
+
+/* 501 - 900 */
+@media screen and (min-width: 501px) and (max-width: 900px){
+    .container
+    {
+        max-width: 600px;
+    }
+
+    .header
+    {
+        height: 5em;
+    }
+
+    .headerMenu
+    {
+        margin-top: 30px;
+    }
+
+    .logo
+    {
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navigation
+    {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+}
