@@ -1,0 +1,1160 @@
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+*,
+*::after
+*::before {
+   box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header
+{
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.headerMenu
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body
+{
+    background: url("../img/PS5_ФОН.png")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/* LOGO */
+
+.logo
+{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo a 
+{
+    color: gray;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+
+.navigation
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.CommonObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.PSObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.XBOXObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.SWITCHObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.PSObj:hover
+{
+    color:blue;
+}
+
+.XBOXObj:hover
+{
+    color:chartreuse;
+}
+
+.CommonObj:hover
+{
+    color:aliceblue;
+}
+
+.SWITCHObj:hover
+{
+    color:crimson;
+}
+
+/*Title*/
+
+
+.introTitle
+{
+    font-size: 75px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    line-height: 1.3;
+    opacity: 0.85;
+}
+
+.introTitleBox
+{
+    margin: 0 auto;
+    padding-top: 600px;
+    width: 100%;
+    max-width: 750px;
+    font-family: 'Noto Sans Limbu', sans-serif;
+}
+
+/*BigInfoBlock*/
+
+.BigInfoBlock
+{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.FONResolution
+{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background: #0051B5;
+    box-shadow: 0 0 100px black;
+}
+
+.ResolutionBlock
+{
+    margin: 0 auto;
+    width: 80%;
+    height: 45vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.InfoResolutionBlock
+{
+    display: block;
+    transform: translate(-100%, 0px);
+    position: relative;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.8s; 
+}
+
+.ResolutionBlock:hover > .InfoResolutionBlock
+{
+    transform: translate(1%, 0px);
+    opacity: 1;
+}
+
+.HeaderResolution
+{
+    padding-bottom: 5%;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+}
+
+.UpperText
+{
+    position: absolute;
+    opacity: 0.75;
+    padding-right: 40%;
+    font-size: 70px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+
+    transition: 0.7s ease;
+} 
+
+.UpperText::after
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 8px;
+    width: 75%;
+    opacity: 0.7;
+    background-color: white;
+}
+
+.ResolutionBlock:hover > .UpperText
+{
+    transform: translate(80%, 0px) scale(0.5);
+    opacity: 0;
+    padding-right: 0;
+}
+
+.TextResolution
+{
+    text-align: center;
+    text-indent: 5%;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+.LinkToResolutionBlock
+{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 20px;
+    width: 25%;
+    height: 30px;
+    margin-top: 30px;
+
+    transition: 0.4s;
+}
+
+
+.LinkToResolutionBlock:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.PhotoResolution
+{
+    display: block;
+    border-radius: 25px;
+    height: 60%;
+    width: 32%;
+    background: no-repeat left 100% / 100%
+    url("../img/РАЗРЕШЕНИЯ_PS.png");
+
+    transition: 0.8s;
+}
+
+.ResolutionBlock:hover > .PhotoResolution
+{
+    transform: translate(10%, 0%) scale(80%);
+    border-radius: 0px;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2000px)
+{
+    .PhotoResolution
+    {
+        height: 68%;
+        width: 22%;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px)
+{
+    .PhotoResolution
+    {
+        height: 58%;
+        width: 22%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1300px)
+{
+    .PhotoResolution
+    {
+        height: 78%;
+        width: 35%;
+    }
+}
+
+/* Design */
+.DesignMainBlock
+{
+    height: 1250px;
+    margin: 0 auto;
+    background: url("../img/BackgroundPS.jpg")  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+    .DesignMainBlock
+    {
+        max-height: 1130px;
+    }
+}
+
+.DesignBlock
+{
+    padding-top: 6%;
+    height: 1100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 0.8fr 2fr;
+}
+
+.DesignTextBlock
+{
+    border-radius: 25px;
+    margin: -5% auto;
+    height: 85%;
+    width: 65%;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.DesignTextBlock h2
+{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #3c8ef3;
+}
+
+.DesignTextBlock h2::after
+{
+    display: block;
+    content: "";
+    width: 50%;
+    height: 4px;
+    background-color: #3c8ef3;
+    margin: 0 auto;
+}
+
+.TextContainer
+{
+    height: 90%;
+    margin: 0 auto;
+}
+
+.TextContainer p
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    text-align: center;
+    /* color: white; */
+}
+
+.DesignPhotoBlock
+{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.PhotoContainer
+{
+    display: grid;
+    height: 85%;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "a a b b" 
+    "a a b b" 
+    "a a c c"
+    "a a c c";
+    gap: 1em;
+}
+
+.Photo1
+{
+    height: 100%;
+    width: 100%;    
+    background: url('../img/PS5_1.webp') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    grid-area: a;
+    border-radius: 25px;
+}
+
+.Photo2
+{
+    height: 100%;
+    width: 100%;    
+    background: url('../img/PS5_2.webp') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    grid-area: b;
+    border-radius: 25px;
+}
+
+.Photo3
+{
+    height: 100%;
+    width: 100%;    
+    background: url('../img/PS5_3.webp') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    grid-area: c;
+    border-radius: 25px;
+}
+
+/* PERFORMANCE */
+.performanceBlock
+{
+    height: 1300px;
+    margin: 0 auto;
+    background: white;
+}
+
+.performanceContainer
+{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.7fr 0.7fr;
+    grid-template-rows: 1fr 1.3fr 1.3fr 1fr;
+    grid-template-areas: 
+    "T T T T"
+    "CPU Photo Photo Photo"
+    "RAM Photo Photo Photo"
+    "SSD GPU TP TP";
+    gap: 3em;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.TextAbove
+{
+    font-size: 70px;
+    color: #3c8ef3;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-align: center;
+    grid-area: T;
+}
+
+.performanceContainer
+{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.CPU
+{
+    grid-area: CPU;
+}
+
+.performanceContainer i
+{
+    font-size: 30px;
+    color: #3c8ef3;
+}
+
+.GPU
+{
+    grid-area: GPU;
+}
+
+.SSD
+{
+    grid-area: SSD;
+}
+
+.RAM
+{
+    grid-area: RAM;    
+}
+
+
+.performanceContainer h3
+{
+    color: #3c8ef3;
+}
+
+.TotalPerformance
+{
+    grid-area: TP;
+}
+
+.PhotoDetails
+{
+    object-fit: cover;
+    border-radius: 25px;
+    background: url("../img/DetailsPS5.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    grid-area: Photo;
+}
+
+/* Featueres */
+
+.FeaturesBlock
+{
+    background: white;
+}
+
+.FeaturesContainer
+{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.GamepadInfoContainer
+{
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-areas: 
+    "Photo Photo"
+    "DS1 Video"
+    "DS2 Video";
+    gap: 3em;
+    margin: 0 auto;
+}
+
+.Gamepad
+{
+    background: url("../img/GamePad.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    grid-area: Photo;
+}
+
+.GamepadInfo
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 17px;
+    grid-area: DS1;
+}
+
+.GamepadInfo h3
+{
+    font-family: 'Comfortaa', cursive;
+    color: #3c8ef3;
+    font-size: 35px;
+}
+
+.GamepadText
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 17px;
+    grid-area: DS2;
+}
+
+.Review
+{
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    grid-area: Video;
+}
+
+.Review iframe
+{
+    width: 525px;
+    height: 300px;
+}
+
+
+/* VideoBlock */
+
+.VideoBlock
+{
+    background: white;
+    padding-bottom: 5%;
+}
+
+.VideoContainer
+{
+    height: 500px;
+    background-color: black;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 -10% 15px black;
+    display: grid;
+    grid-template-areas: "Video Video Info";
+    grid-template-columns: 2fr 1fr;
+}
+
+#GodOfWar
+{
+    min-width: 700px;
+    margin: auto 5%;
+    grid-area: Video;
+}
+
+#GodOfWar iframe
+{
+    width: 735px;
+    height: 412px;
+}
+
+.VideoInfoBlock
+{
+    border-radius: 25px;
+    margin: auto 25%;
+    width: 65%;
+    grid-area: Info;
+}
+
+.VideoInfoBlock h3
+{
+    color: #3c8ef3;
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.VideoInfoBlock p
+{
+    color: white;
+    font-size: 22px;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* FOOTER */
+
+.footer
+{
+    background: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p
+{
+    font-family: sans-serif;
+    color: white;
+    font-size: 13px;
+}
+
+/* Адаптив */
+
+/* 320 - 425 */
+@media screen and (min-width: 320px) and (max-width: 500px){
+    .container
+    {
+        max-width: 300px;
+    }
+
+    .intro
+    {
+        margin: 0 auto;
+    }
+    
+    .introTitle
+    {
+        font-size: 30px;
+    }
+    
+    .introTitleBox
+    {
+        padding-top: 500px;
+        width: 100%;
+    }
+
+    .header
+    {
+        height: 2em;
+    }
+
+    .headerMenu
+    {
+        margin-top: 12px;
+    }
+
+    .logo
+    {
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navigation
+    {
+        font-size: 7px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .introTitleBox
+    {
+        padding-top: 350px;
+    }
+
+    .BigInfoBlock
+    {
+        margin-top: 40%;
+    }
+
+    .ResolutionBlock
+    {
+        margin: 0 auto;
+        width: 90%;
+        height: 130px;
+    }
+
+    .UpperText
+    {
+        font-size: 12px;
+    }
+
+    .UpperText::after
+    {
+        height: 2px;
+    }
+
+    .HeaderResolution
+    {
+        font-size: 8px;
+    }
+
+    .DesignMainBlock
+    {
+        height: 500px;
+        background: white;
+    }
+
+    .DesignBlock
+    {
+        padding-top: 20%;
+        height: 300px;
+        max-width: 300px;
+    }
+    
+    .DesignTextBlock
+    {
+        margin: -5% auto;
+        height: 75%;
+        width: 75%;
+        font-size: 7px;
+    }
+    
+    .DesignTextBlock h2::after
+    {
+        height: 2px;
+    }
+    
+    .TextContainer
+    {
+        height: 80%;
+    }
+    
+    .TextContainer p
+    {
+        font-size: 10px;
+    }
+
+    .performanceBlock
+    {
+        height: 800px;
+    }
+    
+    .performanceContainer
+    {
+        max-width: 300px;
+        gap: 3em;
+    }
+
+    .performanceContainer i
+    {
+        font-size: 15px;
+    }
+
+    .TextAbove
+    {
+        font-size: 20px;
+    }
+
+    .performanceContainer
+    {
+        font-size: 7px;
+    }
+
+    .GamepadInfoContainer
+    {
+        height: 600px;
+        width: 300px;
+    }
+
+    .FeaturesContainer
+    {
+        max-width: 300px;
+    }
+
+    .GamepadInfo
+    {
+        font-size: 7px;
+    }
+
+    .GamepadInfo h3
+    {
+        font-size: 12px;
+    }
+
+    .Review
+    {
+        font-size: 8px;
+    }
+
+    .Review iframe
+    {
+        width: 120px;
+        height: 80px;
+    }
+
+    .VideoContainer
+    {
+        height: 150px;
+        max-width: 320px;
+    }
+    
+    .VideoInfoBlock h3
+    {
+        font-size: 15px;
+    }
+    
+    .VideoInfoBlock
+    {
+        width: 35%;
+    }
+
+    .VideoInfoBlock p
+    {
+        font-size: 8px;
+    }
+
+    #GodOfWar
+    {
+        min-width: 180px;
+    }
+    
+    #GodOfWar iframe
+    {
+        width: 180px;
+        height: 110px;
+    }
+    
+
+    .TextResolution
+    {
+        text-indent: 5%;
+        font-size: 6px;
+    }
+
+    .LinkToResolutionBlock
+    {
+        font-size: 9px;
+        width: 55%;
+        height: 14px;
+        margin-top: 10px;
+    }
+    
+
+    .footer
+    {
+        height: 60px;
+    }
+
+    .footer p
+    {
+        font-size: 8px;
+    }
+}
+
+/* 425 - 768 */
+
+/* 768 - 1024 */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container
+    {
+        width: 650px;
+    }
+
+    .introTitle
+    {
+        font-size: 45px;
+    }
+
+    .header
+    {
+        height: 3em;
+    }
+
+    .headerMenu
+    {
+        margin-top: 15px;
+    }
+
+    .logo
+    {
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navigation
+    {
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .introTitleBox
+    {
+        padding-top: 350px;
+    }
+
+    .UpperText
+    {
+        font-size: 35px;
+    }
+
+    .UpperText::after
+    {
+        height: 5px;
+    }
+
+    .HeaderResolution
+    {
+        /* padding-bottom: 5%; */
+        font-size: 25px;
+    }
+
+    .DesignMainBlock
+    {
+        height: 800px;
+        background: white;
+    }
+
+    .DesignBlock
+    {
+        height: 700px;
+        max-width: 920px;
+    }
+    
+    .DesignTextBlock
+    {
+        margin: -5% auto;
+        height: 75%;
+        width: 75%;
+        font-size: 15px;
+    }
+    
+    .DesignTextBlock h2::after
+    {
+        height: 2px;
+    }
+    
+    .TextContainer
+    {
+        height: 80%;
+    }
+    
+    .TextContainer p
+    {
+        font-size: 14px;
+    }
+
+    .performanceBlock
+    {
+        height: 900px;
+    }
+
+    .performanceContainer
+    {
+        max-width: 700px;
+        gap: 2em;
+        padding-top: 8%;
+    }
+
+    .TextAbove
+    {
+        font-size: 45px;
+    }
+
+    .performanceContainer
+    {
+        font-size: 10px;
+    }
+
+    .GamepadInfoContainer
+    {
+        height: 1100px;
+    }
+
+    .FeaturesContainer
+    {
+        max-width: 700px;
+    }
+
+    .GamepadInfo
+    {
+        font-size: 13px;
+    }
+
+    .GamepadInfo h3
+    {
+        font-size: 25px;
+    }
+
+    .Review
+    {
+        font-size: 15px;
+    }
+
+    .Review iframe
+    {
+        width: 303px;
+        height: 190px;
+    }
+
+    .VideoContainer
+    {
+        height: 300px;
+        max-width: 768px;
+    }
+    
+    .VideoInfoBlock h3
+    {
+        font-size: 28px;
+    }
+    
+    .VideoInfoBlock p
+    {
+        font-size: 16px;
+    }
+
+    #GodOfWar
+    {
+        min-width: 450px;
+    }
+    
+    #GodOfWar iframe
+    {
+        width: 356px;
+        height: 200px;
+    }
+    
+
+    .TextResolution
+    {
+        text-indent: 5%;
+        font-size: 15px;
+    }
+
+    .LinkToResolutionBlock
+    {
+        font-size: 12px;
+        width: 35%;
+        height: 20px;
+        margin-top: 30px;
+    }
+}
+
+
+/* 1200 - 1960 */
+
+@media screen and (min-width: 1025px) and (max-width: 1960px){
+    .container
+    {
+        max-width: 1000px;
+    }
+
+    .ResolutionBlock
+    {
+        width: 100%;
+    }
+    
+    .InfoResolutionBlock
+    {
+        width: 40%;
+    }
+    
+    .HeaderResolution
+    {
+        font-size: 20px;
+    }
+    
+    .UpperText
+    {
+        font-size: 55px;
+    }
+    
+    .TextResolution
+    {
+        font-size: 15px;
+    }
+    
+    .LinkToResolutionBlock
+    {
+        font-size: 15px;
+        height: 25px;
+    }
+}
