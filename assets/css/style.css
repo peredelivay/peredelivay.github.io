@@ -1,0 +1,885 @@
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background:
+    url("../images/ШАПКА.jpg")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+*,
+*::after
+*::before {
+   box-sizing: border-box;
+}
+
+/* INTRO */
+
+.intro
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.introTitle
+{
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: gray;
+    line-height: 1.3;
+    opacity: 0.45;
+}
+
+.introTitleBox
+{
+    padding-top: 500px;
+    width: 75%;
+    max-width: 750px;
+    margin: 0 auto;
+    font-family: 'Noto Sans Limbu', sans-serif;
+}
+
+
+/*MiddleText*/
+
+.MiddleText
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.MiddleText i
+{
+    font-size: 40px;
+    color: green;
+    margin: auto;
+    margin-right: 0.5em;
+}
+
+.MiddleText p
+{
+    color: gray;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin: auto;
+    margin-left: 0em;
+}
+
+/* HEADER */
+
+.header
+{
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.headerMenu
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo
+{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo a 
+{
+    color: gray;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.navigation
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.CommonObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.PSObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.XBOXObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.SWITCHObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.PSObj:hover
+{
+    color:blue;
+}
+
+.XBOXObj:hover
+{
+    color:chartreuse;
+}
+
+.CommonObj:hover
+{
+    color:aliceblue;
+}
+
+.SWITCHObj:hover
+{
+    color:crimson;
+}
+
+
+
+/*SecondBlock*/
+
+.SecondBlock
+{
+    padding-top: 15%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*InfoBlock*/
+
+.InfoBlock
+{
+    display: grid;
+    flex-flow: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 12em;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*InfoPS*/
+
+.InfoBlockPS
+{  
+    width: 394px;
+    height: 506px;
+    border: coral;
+    /* border: 6px solid cornflowerblue; */
+    border-radius: 25px;
+
+    display: block;
+    justify-content: center;
+    background: white;
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.InfoBlockPS:hover
+{
+    transform: scale(1.2);
+}
+
+.InfoBlockPSHead
+{
+    width: 100%;
+    height: 50%;
+    margin-top: center auto;
+    background:
+    url("../images/PS_Карточка.jpg") center;
+    background-size: cover;
+    position: absolute;
+    z-index:  100;
+
+    border-radius: 17px;
+    transition: 0.8s;
+}
+
+.InfoBlockPSHead a
+{
+    display: block;
+    height: 100%;
+}
+
+.InfoBlockPS:hover > .InfoBlockPSHead
+{
+    transform: translate(0px, 100%);
+}
+
+.InfoBlockPSBody
+{
+    height: 50%;
+    width: 100;
+    border-radius: 17px;
+    background: url("../images/PS5.jpg") center;
+    background-size: cover;
+}
+
+.InfoBlockPSBody a
+{
+    display: block;
+    height: 100%;
+}
+
+/*InfoXBOX*/
+
+.InfoBlockBOX
+{  
+    width: 394px;
+    height: 506px;
+
+    /* border: 6px solid greenyellow; */
+    border-radius: 25px;
+
+    display: block;
+    justify-content: center;
+    background: #1B1B1F;
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.InfoBlockBOX:hover
+{
+    transform: scale(1.2);
+}
+
+.InfoBlockXBOXHead
+{
+    width: 100%;
+    height: 50%;
+    margin-top: center auto;
+    background:
+    url("../images/XBOX_Карточка.jpeg") center;
+    background-size: cover;
+    position: absolute;
+    z-index:  100;
+
+    border-radius: 17px;
+    transition: 0.8s;
+}
+
+.InfoBlockXBOXHead a
+{
+    display: block;
+    height: 100%;
+}
+
+.InfoBlockBOX:hover > .InfoBlockXBOXHead
+{
+    transform: translate(0px, 100%);
+}
+
+.InfoBlockXBOXBody
+{
+    height: 50%;
+    width: 100;
+    border-radius: 17px;
+    background: url("../images/XBOX.png") center;
+    background-size: cover;
+}
+
+.InfoBlockXBOXBody a
+{
+    display: block;
+    height: 100%;
+}
+
+/*InfoSWITCH*/
+
+.InfoBlockSWITCH
+{  
+    width: 394px;
+    height: 506px;
+
+    border: coral;
+    /* border: 6px solid orange; */
+    border-radius: 25px;
+
+    display: block;
+    justify-content: center;
+
+    background: #FAC600;
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.InfoBlockSWITCH:hover
+{
+    transform: scale(1.2);
+}
+
+.InfoBlockSWITCHHead
+{
+    width: 100%;
+    height: 50%;
+    margin-top: center auto;
+    background:
+    url("../images/SWITCH_Карточка.webp") center;
+    background-size: cover;
+    position: absolute;
+    z-index:  100;
+
+    border-radius: 17px;
+    transition: 0.8s;
+}
+
+.InfoBlockSWITCHHead a
+{
+    display: block;
+    height: 100%;
+}
+
+.InfoBlockSWITCH:hover > .InfoBlockSWITCHHead
+{
+    transform: translate(0px, 100%);
+}
+
+.InfoBlockSWITCHBody
+{
+    height: 50%;
+    width: 100;
+    border-radius: 17px;
+    background: url("../images/SWITCH.jpg") center;
+    background-size: cover;
+}
+
+.InfoBlockSWITCHBody a
+{
+    display: block;
+    height: 100%;
+}
+
+.Text
+{
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+    align-self: center;
+}
+
+/*LastBlock*/
+
+.LastBlock
+{
+    padding-top: 10%;
+    height: 150px;
+}
+
+.Connect
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+    height: 40%;
+    border: whitesmoke solid 5px;
+
+    background-color: black;
+
+    transition: 0.8s;
+}
+
+.btnLink
+{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: gray;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.Connect a
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.btnLink:hover
+{
+    color: black;
+
+}
+
+.Connect:hover
+{
+    background-color: white;
+}
+
+/* FOOTER */
+
+.footer
+{
+    background: black;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p
+{
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+/* Адаптив */
+
+/* 320 - 425 */
+@media screen and (min-width: 320px) and (max-width: 426px){
+    .container
+    {
+        max-width: 300px;
+    }
+
+    .intro
+    {
+        margin: 0 auto;
+    }
+    
+    .introTitle
+    {
+        font-size: 30px;
+    }
+    
+    .introTitleBox
+    {
+        padding-top: 500px;
+        padding-left: 7%;
+        width: 100%;
+    }
+
+    .MiddleText
+    {
+        padding-left: 10%;
+    }
+
+    .header
+    {
+        height: 2em;
+    }
+
+    .headerMenu
+    {
+        margin-top: 12px;
+    }
+
+    .logo
+    {
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navigation
+    {
+        font-size: 7px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .introTitleBox
+    {
+        padding-top: 350px;
+    }
+
+    .MiddleText i
+    {
+        font-size: 15px;
+    }
+
+    .MiddleText p
+    {
+        font-size: 8px;
+    }
+
+    .InfoBlock
+    {
+        padding-top: 25%;
+        padding-left: 10%;
+        margin: 0 auto;
+        gap: 2em;
+    }
+
+    .InfoBlockPS
+    {  
+        width: 100px;
+        height: 128px;
+    }
+
+    .InfoBlockBOX
+    {
+        width: 100px;
+        height: 128px;
+    }
+
+    .InfoBlockSWITCH
+    {
+        width: 100px;
+        height: 128px;
+    }
+
+    .Text
+    {
+        font-size: 9px;
+    }
+
+    .LastBlock
+    {
+        padding-top: 20%;
+        height: 40px;
+    }
+
+    .Connect
+    {
+        border: whitesmoke solid 2px;
+    }
+
+    .btnLink
+    {
+        font-size: 9px;
+    }
+        
+    .footer
+    {
+        height: 45px;
+    }
+
+    .footer p
+    {
+        font-size: 8px;
+    }
+}
+
+/* 425 - 768 */
+@media screen and (min-width: 426px) and (max-width: 767px){
+    .container
+    {
+        max-width: 550px;
+    }
+
+    .introTitle
+    {
+        font-size: 35px;
+    }
+
+    .header
+    {
+        height: 3em;
+    }
+
+    .headerMenu
+    {
+        margin-top: 15px;
+    }
+
+    .logo
+    {
+        font-size: 25px;
+    }
+
+    .navigation
+    {
+        font-size: 10px;
+    }
+    
+    .introTitleBox
+    {
+        padding-top: 350px;
+    }
+
+    .MiddleText i
+    {
+        font-size: 25px;
+    }
+
+    .MiddleText p
+    {
+        font-size: 12.5px;
+    }
+
+    .InfoBlock
+    {
+        padding-top: 15%;
+        margin: 0 auto;
+        max-width: 450px;
+        gap: 2em;
+    }
+
+    .InfoBlockPS
+    {  
+        width: 160px;
+        height: 215px;
+    }
+
+    .InfoBlockBOX
+    {
+        width: 160px;
+        height: 215px;
+    }
+
+    .InfoBlockSWITCH
+    {
+        width: 160px;
+        height: 215px;
+    }
+
+    .Text
+    {
+        font-size: 14px;
+    }
+
+    .LastBlock
+    {
+        padding-top: 15%;
+        height: 50px;
+    }
+
+    .Connect
+    {
+        border: whitesmoke solid 3px;
+    }
+
+    .btnLink
+    {
+        font-size: 14px;
+    }
+        
+    .footer
+    {
+        height: 40px;
+    }
+
+    .footer p
+    {
+        font-size: 8px;
+    }
+}
+/* 768 - 1024 */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container
+    {
+        max-width: 550px;
+    }
+
+    .introTitle
+    {
+        font-size: 45px;
+    }
+
+    .header
+    {
+        height: 3em;
+    }
+
+    .headerMenu
+    {
+        margin-top: 15px;
+    }
+
+    .logo
+    {
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navigation
+    {
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .introTitleBox
+    {
+        padding-top: 350px;
+    }
+
+    .MiddleText i
+    {
+        font-size: 25px;
+    }
+
+    .MiddleText p
+    {
+        font-size: 12.5px;
+    }
+
+    .InfoBlock
+    {
+        padding-top: 5%;
+        margin: 0 auto;
+        max-width: 550px;
+        gap: 5em;
+    }
+
+    .InfoBlockPS
+    {  
+        width: 180px;
+        height: 230px;
+    }
+
+    .InfoBlockBOX
+    {
+        width: 180px;
+        height: 230px;
+    }
+
+    .InfoBlockSWITCH
+    {
+        width: 180px;
+        height: 230px;
+    }
+
+    .Text
+    {
+        font-size: 14px;
+    }
+
+    .LastBlock
+    {
+        padding-top: 10%;
+        height: 100px;
+    }
+
+    .Connect
+    {
+        border: whitesmoke solid 3px;
+    }
+
+    .btnLink
+    {
+        font-size: 20px;
+    }
+        
+    .footer
+    {
+        height: 80px;
+    }
+
+    .footer p
+    {
+        font-size: 15px;
+    }
+}
+
+/* 1440 - 1960 */
+
+@media screen and (min-width: 1440px) and (max-width: 1960px){
+        .container
+    {
+        max-width: 800px;
+    }
+
+        .logo
+    {
+        font-size: 33px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navigation
+    {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+    .SecondBlock
+    {
+        padding-top: 25%;
+    }
+
+    .InfoBlockPS
+    {  
+        width: 354px;
+        height: 454px;
+    }
+
+    .InfoBlockBOX
+    {
+        width: 354px;
+        height: 454px;
+    }
+
+    .InfoBlockSWITCH
+    {
+        width: 354px;
+        height: 454px;
+    }
+
+    .Text
+    {
+        font-size: 23px;
+    }
+}
