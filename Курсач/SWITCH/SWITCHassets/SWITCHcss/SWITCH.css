@@ -1,0 +1,1120 @@
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+*,
+*::after
+*::before {
+   box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header
+{
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.headerMenu
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body
+{
+    background: url("../SWITCHimg/BackgroundSWITCH.webp");
+    padding: 0;
+    margin: 0;
+}
+
+/* LOGO */
+
+.logo
+{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo a 
+{
+    color: gray;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.navigation
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.CommonObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.PSObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.XBOXObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.SWITCHObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.PSObj:hover
+{
+    color:blue;
+}
+
+.XBOXObj:hover
+{
+    color:chartreuse;
+}
+
+.CommonObj:hover
+{
+    color:aliceblue;
+}
+
+.SWITCHObj:hover
+{
+    color:crimson;
+}
+
+/* MainBlock */
+
+.mainBlock
+{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 50px black;
+    max-height: 7300px;
+}
+
+/* logoBlock */
+
+.logoBlock
+{
+    height: 100px;
+    width: 45%;
+    background-color: #EC414D;
+    border: 6px solid #EC414D;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.logoBlock h1
+{
+    margin: auto;
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* upperBlock */
+.upperBlock
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photoSwitchBlock
+{
+    width: 60%;
+    height: 430px;
+    margin: 15% -15%;
+    background: url("../SWITCHimg/SWITCH.png") no-repeat;
+    background-size: contain;
+    transition: 1s;
+}
+
+.photoSwitchBlock:hover
+{
+    transform: rotate(-5deg);
+}
+/* arrow */
+
+.arrowBlock
+{
+    padding-top: 15%;
+    display: grid;
+    grid-row: 50% 50%;
+    width: 40%;
+    height: 200px;
+    opacity: 0.7;
+}
+
+.arrowBlock i
+{
+    margin: 0 auto;
+    font-size: 95px;
+    font-weight: 200;
+    color: black;
+    position: relative;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    opacity: 0.7;
+}
+
+@keyframes jump {
+    0% {
+      top: 0;
+    }
+    
+    50% {
+        top: -50px;
+    }
+   
+    100% {
+        top: 0;
+    }
+  }
+
+.arrowBlock p
+{
+    font-size: 33px;
+    text-align: center;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 auto;
+    width: 40%;
+}
+
+/* Review */
+.reviewHeader
+{
+    margin-top: 10%;
+    width: 30%;
+    height: 1.5%;
+    background-color: #EC414D;
+    text-align: center;
+    margin: 0 70%;
+}
+
+.reviewHeader h1
+{
+    font-size: 60px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.Reviews h1
+{
+    font-size: 50px;
+    color: #EC414D;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.Reviews h1::after
+{
+    font-size: 50px;
+    color: #EC414D;
+    font-family: 'Noto Sans', sans-serif;
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 10px;
+    margin: auto;
+    background-color: #EC414D;
+    width: 80%;
+}
+
+.Reviews p
+{
+    font-size: 30px;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.Reviews a
+{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    transition: 0.3s;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #EC414D;
+}
+
+.Reviews a:hover
+{
+    color: black;
+}
+
+.reviewBlock
+{
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stars
+{
+    padding-top: 10%;
+    width: 350px;
+    height: 70px;
+    margin: auto;
+}
+
+.stars i
+{
+    font-size: 70px;
+    color: gold;
+    transition: 0.4s;
+}
+
+.stars i:hover
+{
+    transform: translateY(-40%);
+}
+
+.WylsacomReview
+{
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 18%;
+    width: 40%;
+}
+
+.geekReview
+{
+    text-align: center;
+    padding-top: 10%;
+    padding-right: 5%;
+    width: 40%;
+}
+
+.itpediaReview
+{
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 18%;
+    width: 40%;
+}
+
+/* Performance */
+.PerformanceBlock
+{
+    padding-top: 15%;
+}
+
+.PerformanceHeader
+{
+    width: 30%;
+    height: 30%;
+    background-color: #EC414D;
+    text-align: center;
+    margin: 0 0;
+}
+
+.PerformanceHeader h1
+{
+    font-size: 60px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.perfStats
+{
+    height: 1000px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-areas: 
+    "ph ph b1"
+    "ph ph b2"
+    "b3 b3 b3";
+}
+
+.photoMult
+{
+    margin-left: 5%;
+    background: url("../SWITCHimg/multiplayer.jpg")no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    grid-area: ph;
+    border: 3px solid black;
+}
+
+.block1
+{
+    margin-left: 10%;
+    grid-area: b1;
+    width: 60%;
+}
+
+.block2
+{
+    margin-left: 10%;
+    grid-area: b2;
+    width: 60%;
+}
+
+.block3
+{
+    margin-top: 3%;
+    margin-left: 10%;
+    grid-area: b3;
+    width: 80%;
+}
+
+.perfStats h1
+{
+    font-size: 40px;
+    color: #EC414D;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.perfStats p
+{
+    font-size: 25px;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* NewFeatures */
+
+.carousel 
+{
+    margin: 0 auto;
+    padding-top: 20%;
+    height: 448px;
+    width: 940px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img
+{
+    padding-top: 5%;
+}
+
+.carousel .slide 
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide p
+{
+    margin: auto;
+    font-size: 50px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #EC414D;
+    text-align: center;
+}
+
+.carousel .slide.active 
+{
+    opacity: 1;
+}
+  
+
+/* LastBlock */
+
+.LastBlock
+{
+    padding-top: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15%;
+}
+
+.photoLogo
+{
+    margin-left: 15%;
+    background: url("../SWITCHimg/LogoS.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    transition: 0.7s;
+}
+
+.photoLogo:hover
+{
+    transform: scale(1.3);
+}
+
+.photoLogo a
+{
+    display: block;
+    height: 100%;
+}
+
+.text
+{
+    width: 30%;
+    margin-right: 10%;
+}
+
+.text h1
+{
+    font-size: 60px;
+    color: #EC414D;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.text p
+{
+    font-size: 25px;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* FOOTER */
+
+.footer
+{
+    background: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer p
+{
+    font-family: sans-serif;
+    color: white;
+    font-size: 13px;
+}
+
+/* Адаптив */
+/* 320 - 450 */
+@media screen and (min-width: 320px) and (max-width: 450px){
+    .container
+    {
+        max-width: 310px;
+    }
+
+    .logo
+    {
+        font-size: 14px;
+    }
+
+    .mainBlock
+    {
+        max-height: 3200px;
+    }
+
+    .header
+    {
+        height: 3em;
+    }
+
+    .navigation
+    {
+        font-size: 7px;
+    }
+
+    .arrowBlock
+    {
+        height: 120px;
+    }
+    
+    .arrowBlock i
+    {
+        font-size: 40px;
+    }    
+
+    .arrowBlock p
+    {
+        font-size: 10px;
+    }
+
+    .mainBlock
+    {
+        max-width: 310px;
+    }
+    
+    /* logoBlock */
+    
+    .logoBlock
+    {
+        height: 70px;
+        width: 45%;
+        border: 2px solid #EC414D;
+    }
+    
+    .logoBlock h1
+    {
+        font-size: 25px;
+    }
+
+    .reviewHeader
+    {
+        margin-top: 0%;
+    }
+
+    .reviewHeader h1
+    {
+        font-size: 20px;
+    }
+    
+    .Reviews h1
+    {
+        font-size: 12px;
+    }
+    
+    
+    .Reviews h1::after
+    {
+        font-size: 18px;
+        height: 2px;
+    }
+    
+    .Reviews p
+    {
+        font-size: 7px;
+    }
+    
+    .Reviews a
+    {
+        font-size: 11px;
+    }
+    
+    .stars
+    {
+        padding-top: 10%;
+        width: 110px;
+        height: 17px;
+    }
+    
+    .stars i
+    {
+        font-size: 17px;
+    }
+    
+    .stars i:hover
+    {
+        transform: translateY(-40%);
+    }
+    
+    .WylsacomReview
+    {
+        padding-left: 10%;
+    }
+    
+    .geekReview
+    {
+        padding-right: 5%;
+    }
+    
+    .itpediaReview
+    {
+        padding-left: 10%;
+    }    
+
+    .PerformanceHeader h1
+    {
+        font-size: 17px;
+    }
+
+    .PerformanceHeader
+    {
+        width: 45%;
+        height: 30%;
+    }
+
+    
+    .perfStats
+    {
+        height: 300px;
+    }
+    
+    .perfStats h1
+    {
+        font-size: 15px;
+    }
+    
+    .perfStats p
+    {
+        font-size: 9px;
+    }
+
+    .newFeatures
+    {
+        height: 0px;
+    }
+
+    .carousel 
+    {
+        height: 0px;
+        width: 0px;
+    }
+
+    .photoLogo
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+    .text h1
+    {
+        font-size: 15px;
+    }
+    
+    .text p
+    {
+        font-size: 7px;
+    }
+
+    .LastBlock
+    {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }    
+
+    .footer
+    {
+        height: 45px;
+    }
+    
+    .footer p
+    {
+        font-size: 7px;
+    }    
+}
+
+/* 450 - 768 */
+@media screen and (min-width: 451px) and (max-width: 768px){
+    .container
+    {
+        max-width: 420px;
+    }
+
+    .logo
+    {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .header
+    {
+        height: 4em;
+    }
+
+    .navigation
+    {
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .arrowBlock
+    {
+        height: 150px;
+    }
+    
+    .arrowBlock i
+    {
+        font-size: 60px;
+    }    
+
+    .arrowBlock p
+    {
+        font-size: 20px;
+    }
+
+    .mainBlock
+    {
+        max-width: 430px;
+    }
+    
+    /* logoBlock */
+    
+    .logoBlock
+    {
+        height: 90px;
+        width: 45%;
+        border: 3px solid #EC414D;
+    }
+    
+    .logoBlock h1
+    {
+        font-size: 40px;
+    }
+
+    .reviewHeader h1
+    {
+        font-size: 30px;
+    }
+    
+    .Reviews h1
+    {
+        font-size: 18px;
+    }
+    
+    
+    .Reviews h1::after
+    {
+        font-size: 22px;
+        height: 2px;
+    }
+    
+    .Reviews p
+    {
+        font-size: 10px;
+    }
+    
+    .Reviews a
+    {
+        font-size: 12px;
+    }
+    
+    .stars
+    {
+        padding-top: 10%;
+        width: 120px;
+        height: 22px;
+    }
+    
+    .stars i
+    {
+        font-size: 22px;
+    }
+    
+    .stars i:hover
+    {
+        transform: translateY(-40%);
+    }
+    
+    .WylsacomReview
+    {
+        padding-left: 10%;
+    }
+    
+    .geekReview
+    {
+        padding-right: 5%;
+    }
+    
+    .itpediaReview
+    {
+        padding-left: 10%;
+    }    
+
+    .PerformanceHeader h1
+    {
+        font-size: 25px;
+    }
+
+    .PerformanceHeader
+    {
+        width: 45%;
+        height: 30%;
+    }
+
+    
+    .perfStats
+    {
+        height: 650px;
+    }
+    
+    .perfStats h1
+    {
+        font-size: 20px;
+    }
+    
+    .perfStats p
+    {
+        font-size: 13px;
+    }
+
+    .newFeatures
+    {
+        height: 0px;
+    }
+
+    .carousel 
+    {
+        height: 0px;
+        width: 0px;
+    }
+    
+
+    .slide p
+    {
+        font-size: 27px;
+    }    
+
+    .photoLogo
+    {
+        height: 125px;
+        width: 125px;
+    }
+
+    .text h1
+    {
+        font-size: 20px;
+    }
+    
+    .text p
+    {
+        font-size: 11px;
+    }
+
+    .LastBlock
+    {
+        padding-top: 0%;
+    }    
+
+    .footer
+    {
+        height: 60px;
+    }
+    
+    .footer p
+    {
+        font-size: 10px;
+    }    
+}
+
+/* 768 - 1024 */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container
+    {
+        max-width: 700px;
+    }
+
+    .logo
+    {
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .header
+    {
+        height: 4em;
+    }
+
+    .navigation
+    {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .reviewHeader h1
+    {
+        font-size: 40px;
+    }
+    
+    .Reviews h1
+    {
+        font-size: 30px;
+    }
+    
+    
+    .Reviews h1::after
+    {
+        font-size: 35px;
+        height: 2px;
+    }
+    
+    .Reviews p
+    {
+        font-size: 17px;
+    }
+    
+    .Reviews a
+    {
+        font-size: 20px;
+    }
+    
+    .stars
+    {
+        padding-top: 10%;
+        width: 300px;
+        height: 40px;
+    }
+    
+    .stars i
+    {
+        font-size: 40px;
+    }
+    
+    .stars i:hover
+    {
+        transform: translateY(-40%);
+    }
+    
+    .WylsacomReview
+    {
+        text-align: center;
+        padding-top: 10%;
+        padding-left: 10%;
+        width: 40%;
+    }
+    
+    .geekReview
+    {
+        text-align: center;
+        padding-top: 10%;
+        padding-right: 5%;
+        width: 40%;
+    }
+    
+    .itpediaReview
+    {
+        text-align: center;
+        padding-top: 10%;
+        padding-left: 10%;
+        width: 40%;
+    }    
+
+    .PerformanceHeader h1
+    {
+        font-size: 40px;
+    }
+    
+    .perfStats
+    {
+        height: 800px;
+    }
+    
+    .perfStats h1
+    {
+        font-size: 25px;
+    }
+    
+    .perfStats p
+    {
+        font-size: 17px;
+    }
+
+    /* .newFeatures
+    {
+        height: 400px;
+    } */
+
+    .carousel 
+    {
+        height: 600px;
+        width: 700px;
+    }
+    
+
+    .slide p
+    {
+        font-size: 35px;
+    }    
+
+    .photoLogo
+    {
+        height: 250px;
+        width: 250px;
+    }
+
+    .text h1
+    {
+        font-size: 40px;
+    }
+    
+    .text p
+    {
+        font-size: 17px;
+    }
+}
+
+/* 1024 - 1300 */
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+    .container
+    {
+        max-width: 920px;
+    }
+
+    .logo
+    {
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navigation
+    {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .photoLogo
+    {
+        height: 350px;
+        width: 350px;
+    }
+}
